@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de CEP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet (mapa sem chave) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MAPA FUNDO -->
+    <div id="mapa"></div>
+
+    <!-- PAINEL ARRASTÁVEL -->
+    <div class="painel" id="painel">
+        <h2 class="titulo">Consulta de CEP</h2>
+
+        <input type="text" id="cep" placeholder="Digite o CEP">
+        <button onclick="buscarCep()">Buscar</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
